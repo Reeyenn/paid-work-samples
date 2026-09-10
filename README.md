@@ -18,3 +18,7 @@ To discuss a small task, open an issue with a public or sanitized reproduction a
 ## Licensing
 
 The WordPress sample is GPL-2.0-or-later as marked in its plugin header. The PHP order-flow sample is MIT licensed; see its LICENSE file.
+
+## React dashboard sample
+
+[Workroom](frontend-workqueue/README.md): a fictional React/TypeScript queue with status filtering, detail sheets, themes, and reusable components. Build and type checks pass; browser interaction testing has not been performed.
