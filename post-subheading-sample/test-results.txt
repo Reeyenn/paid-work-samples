@@ -1,0 +1,20 @@
+PASS 1 native save preserves quotes and ampersands
+PASS 2 render escapes output
+PASS 3 missing nonce cannot overwrite
+PASS 4 invalid nonce cannot overwrite
+PASS 5 absent field preserves value
+PASS 6 array field does not overwrite
+PASS 7 explicit empty field clears metadata
+PASS 8 HTML removed on save
+PASS 9 subscriber cannot edit another post
+PASS 10 public published subheading visible to visitor
+PASS 11 draft subheading hidden from visitor
+PASS 12 authorized editor can preview draft
+PASS 13 password protected post does not leak subheading
+PASS 14 shortcode uses current post
+PASS 15 empty value emits no markup
+PASS 16 page is not mutated
+PASS 17 authorized REST save sanitizes field
+PASS 18 subscriber REST mutation rejected
+PASS 19 native editor contains nonce and saved field
+19 checks passed on WordPress 7.1, PHP 8.5.10

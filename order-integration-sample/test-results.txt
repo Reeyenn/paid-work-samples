@@ -1,0 +1,28 @@
+PASS: unpaid order is refused
+PASS: invalid reference is refused
+PASS: validation does not invoke the gateway
+PASS: accepted result records success
+PASS: duplicate payment events and workers submit only once
+PASS: changed payload cannot reuse an order reference
+PASS: restart preserves the completed state
+PASS: overlapping independent DB connection cannot acquire claimed job
+PASS: overlapping workers produce one provider submission
+PASS: timeout after acceptance is not treated as a definite failure
+PASS: uncertain order is never blindly retried
+PASS: provider lookup recovers the accepted receipt
+PASS: reconciliation does not submit a second recharge
+PASS: missing lookup result leaves the order unresolved
+PASS: transport exception details are excluded from the ledger
+PASS: proven non-acceptance schedules a retry
+PASS: worker respects first retry deadline
+PASS: backoff increases from 30 to 60 seconds
+PASS: retry budget stops after three attempts
+PASS: exhausted jobs stay stopped
+PASS: permanent rejection does not retry
+PASS: empty success receipt requires reconciliation
+PASS: crashed in-flight work cannot be resubmitted automatically
+PASS: crashed worker can be reconciled by provider receipt
+PASS: RSA signature verifies over the exact request bytes
+PASS: changing serialized bytes invalidates the RSA signature
+
+26 checks passed; zero network requests; all orders and receipts are fake.
