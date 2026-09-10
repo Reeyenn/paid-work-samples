@@ -19,3 +19,5 @@ Question: How robust are exact mathematical answers to equivalent wording, and h
 Dataset and original scripts: CC0-1.0. Model weights remain Apache-2.0 at the publisher; they will not be uploaded with results.
 
 Contest eligibility and required Hugging Face publication remain unconfirmed. A completed experiment is not an accepted entry or an award.
+
+Implementation clarification before inspecting evaluation outputs: the separate smoke run showed the native `</think>` delimiter can occur immediately before the final answer on the same line. The scorer removes the reasoning prefix through the last `</think>` and applies the specified last-line rule to the answer text. Prefix budgets only receive primary correctness credit if the original run completed with EOS within that budget; a correct marked answer in an unfinished prefix is tracked separately. This avoids giving credit to provisional reasoning answers.
