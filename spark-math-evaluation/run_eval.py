@@ -8,7 +8,7 @@ from mlx_lm.sample_utils import make_sampler
 from spark_mlx_llm import load
 p=argparse.ArgumentParser();p.add_argument('--model',required=True);p.add_argument('--out',required=True);p.add_argument('--smoke',action='store_true');args=p.parse_args()
 mx.set_default_device(mx.gpu);mx.random.seed(20260910)
-model,tok,config=load(args.model,dtype='bfloat16',return_config=True)
+model,tok,config=load(args.model,dtype='bfloat16',tokenizer_config={'trust_remote_code':False},return_config=True)
 root=Path(__file__).parent
 rows=[json.loads(x) for x in (root/'dataset.jsonl').read_text().splitlines()]
 if args.smoke: rows=[{'id':'smoke-only','prompt':'What is 17 + 28? Give the answer briefly.','expected':'45/1'}]
