@@ -1,0 +1,54 @@
+{
+  "completed_records": 16,
+  "expected_records": 16,
+  "budgets": {
+    "256": {
+      "correct": 0,
+      "denominator": 16,
+      "incomplete": 16,
+      "format": 0,
+      "wrong": 0,
+      "pairs_evaluated": 8,
+      "both_correct_pairs": 0,
+      "discordant_correctness_pairs": 0,
+      "families": {
+        "changing_percentage_base": {
+          "correct": 0,
+          "n": 16
+        }
+      }
+    },
+    "1024": {
+      "correct": 0,
+      "denominator": 16,
+      "incomplete": 16,
+      "format": 0,
+      "wrong": 0,
+      "pairs_evaluated": 8,
+      "both_correct_pairs": 0,
+      "discordant_correctness_pairs": 0,
+      "families": {
+        "changing_percentage_base": {
+          "correct": 0,
+          "n": 16
+        }
+      }
+    },
+    "4096": {
+      "correct": 2,
+      "denominator": 16,
+      "incomplete": 13,
+      "format": 1,
+      "wrong": 0,
+      "pairs_evaluated": 8,
+      "both_correct_pairs": 0,
+      "discordant_correctness_pairs": 2,
+      "families": {
+        "changing_percentage_base": {
+          "correct": 2,
+          "n": 16
+        }
+      }
+    }
+  }
+}

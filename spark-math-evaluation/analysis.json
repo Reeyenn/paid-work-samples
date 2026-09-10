@@ -1,0 +1,604 @@
+{
+  "analysis_status": "exploratory",
+  "primary": {
+    "n": 64,
+    "correct": 37,
+    "complete": 40,
+    "median_tokens": 2814.5,
+    "total_tokens": 179727
+  },
+  "deduplicated": {
+    "n": 62,
+    "correct": 35,
+    "complete": 38,
+    "median_tokens": 2866.5,
+    "total_tokens": 177320
+  },
+  "duplicate_prompts": [
+    {
+      "id": "conditional_without_replacement-07-direct",
+      "duplicates": "conditional_without_replacement-00-direct"
+    },
+    {
+      "id": "conditional_without_replacement-07-reworded",
+      "duplicates": "conditional_without_replacement-00-reworded"
+    }
+  ],
+  "family_metrics": {
+    "changing_percentage_base": {
+      "n": 16,
+      "correct": 0,
+      "complete": 1,
+      "median_tokens": 4096.0,
+      "total_tokens": 63281
+    },
+    "conditional_without_replacement": {
+      "n": 16,
+      "correct": 15,
+      "complete": 16,
+      "median_tokens": 1306.0,
+      "total_tokens": 19472
+    },
+    "equal_distance_speed": {
+      "n": 16,
+      "correct": 12,
+      "complete": 13,
+      "median_tokens": 2569.5,
+      "total_tokens": 43677
+    },
+    "noncoprime_congruences": {
+      "n": 16,
+      "correct": 10,
+      "complete": 10,
+      "median_tokens": 3448.0,
+      "total_tokens": 53297
+    }
+  },
+  "unit_clarification": {
+    "original": {
+      "n": 16,
+      "correct": 0,
+      "complete": 1,
+      "median_tokens": 4096.0,
+      "total_tokens": 63281
+    },
+    "clarified": {
+      "n": 16,
+      "correct": 2,
+      "complete": 3,
+      "median_tokens": 4096.0,
+      "total_tokens": 61499
+    },
+    "pairs": [
+      {
+        "id": "changing_percentage_base-00-direct",
+        "original": {
+          "id": "changing_percentage_base-00-direct",
+          "pair": "changing_percentage_base-00",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-206/5",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 76.6035039169983
+        },
+        "clarified": {
+          "id": "changing_percentage_base-00-direct",
+          "pair": "changing_percentage_base-00",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-206/5",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 88.43236237500241
+        }
+      },
+      {
+        "id": "changing_percentage_base-00-reworded",
+        "original": {
+          "id": "changing_percentage_base-00-reworded",
+          "pair": "changing_percentage_base-00",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-206/5",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 75.21805550000136
+        },
+        "clarified": {
+          "id": "changing_percentage_base-00-reworded",
+          "pair": "changing_percentage_base-00",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-206/5",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 89.56838183299988
+        }
+      },
+      {
+        "id": "changing_percentage_base-01-direct",
+        "original": {
+          "id": "changing_percentage_base-01-direct",
+          "pair": "changing_percentage_base-01",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "124/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 76.81905420900148
+        },
+        "clarified": {
+          "id": "changing_percentage_base-01-direct",
+          "pair": "changing_percentage_base-01",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "124/25",
+          "parsed": "124/25",
+          "complete": true,
+          "correct": true,
+          "formatted_answer_matches": true,
+          "reason": "correct",
+          "tokens": 2688,
+          "seconds": 58.29460945800383
+        }
+      },
+      {
+        "id": "changing_percentage_base-01-reworded",
+        "original": {
+          "id": "changing_percentage_base-01-reworded",
+          "pair": "changing_percentage_base-01",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "124/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.26727770900106
+        },
+        "clarified": {
+          "id": "changing_percentage_base-01-reworded",
+          "pair": "changing_percentage_base-01",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "124/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 87.32804262499849
+        }
+      },
+      {
+        "id": "changing_percentage_base-02-direct",
+        "original": {
+          "id": "changing_percentage_base-02-direct",
+          "pair": "changing_percentage_base-02",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-65/4",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.05604020800092
+        },
+        "clarified": {
+          "id": "changing_percentage_base-02-direct",
+          "pair": "changing_percentage_base-02",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-65/4",
+          "parsed": "",
+          "complete": true,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "format",
+          "tokens": 2013,
+          "seconds": 43.99376029099949
+        }
+      },
+      {
+        "id": "changing_percentage_base-02-reworded",
+        "original": {
+          "id": "changing_percentage_base-02-reworded",
+          "pair": "changing_percentage_base-02",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-65/4",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 75.88800845899823
+        },
+        "clarified": {
+          "id": "changing_percentage_base-02-reworded",
+          "pair": "changing_percentage_base-02",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-65/4",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 92.46741129200382
+        }
+      },
+      {
+        "id": "changing_percentage_base-03-direct",
+        "original": {
+          "id": "changing_percentage_base-03-direct",
+          "pair": "changing_percentage_base-03",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "122/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 75.77943495799991
+        },
+        "clarified": {
+          "id": "changing_percentage_base-03-direct",
+          "pair": "changing_percentage_base-03",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "122/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 105.7291544999971
+        }
+      },
+      {
+        "id": "changing_percentage_base-03-reworded",
+        "original": {
+          "id": "changing_percentage_base-03-reworded",
+          "pair": "changing_percentage_base-03",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "122/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.8923408749979
+        },
+        "clarified": {
+          "id": "changing_percentage_base-03-reworded",
+          "pair": "changing_percentage_base-03",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "122/25",
+          "parsed": "122/25",
+          "complete": true,
+          "correct": true,
+          "formatted_answer_matches": true,
+          "reason": "correct",
+          "tokens": 3550,
+          "seconds": 94.19192720799765
+        }
+      },
+      {
+        "id": "changing_percentage_base-04-direct",
+        "original": {
+          "id": "changing_percentage_base-04-direct",
+          "pair": "changing_percentage_base-04",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-867/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 78.58342029199775
+        },
+        "clarified": {
+          "id": "changing_percentage_base-04-direct",
+          "pair": "changing_percentage_base-04",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-867/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 113.92438916700485
+        }
+      },
+      {
+        "id": "changing_percentage_base-04-reworded",
+        "original": {
+          "id": "changing_percentage_base-04-reworded",
+          "pair": "changing_percentage_base-04",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-867/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.04568579200713
+        },
+        "clarified": {
+          "id": "changing_percentage_base-04-reworded",
+          "pair": "changing_percentage_base-04",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-867/25",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 118.49292291700112
+        }
+      },
+      {
+        "id": "changing_percentage_base-05-direct",
+        "original": {
+          "id": "changing_percentage_base-05-direct",
+          "pair": "changing_percentage_base-05",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-693/50",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 81.26870337499713
+        },
+        "clarified": {
+          "id": "changing_percentage_base-05-direct",
+          "pair": "changing_percentage_base-05",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-693/50",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 121.6238154169987
+        }
+      },
+      {
+        "id": "changing_percentage_base-05-reworded",
+        "original": {
+          "id": "changing_percentage_base-05-reworded",
+          "pair": "changing_percentage_base-05",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-693/50",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 76.28155420799885
+        },
+        "clarified": {
+          "id": "changing_percentage_base-05-reworded",
+          "pair": "changing_percentage_base-05",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-693/50",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 124.23761170799844
+        }
+      },
+      {
+        "id": "changing_percentage_base-06-direct",
+        "original": {
+          "id": "changing_percentage_base-06-direct",
+          "pair": "changing_percentage_base-06",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-29/2",
+          "parsed": "-29/200",
+          "complete": true,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "wrong",
+          "tokens": 1841,
+          "seconds": 33.132639083996764
+        },
+        "clarified": {
+          "id": "changing_percentage_base-06-direct",
+          "pair": "changing_percentage_base-06",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-29/2",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 124.61876091699378
+        }
+      },
+      {
+        "id": "changing_percentage_base-06-reworded",
+        "original": {
+          "id": "changing_percentage_base-06-reworded",
+          "pair": "changing_percentage_base-06",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-29/2",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.88435012500122
+        },
+        "clarified": {
+          "id": "changing_percentage_base-06-reworded",
+          "pair": "changing_percentage_base-06",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-29/2",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 124.05089783400035
+        }
+      },
+      {
+        "id": "changing_percentage_base-07-direct",
+        "original": {
+          "id": "changing_percentage_base-07-direct",
+          "pair": "changing_percentage_base-07",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-2797/100",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.88132724999741
+        },
+        "clarified": {
+          "id": "changing_percentage_base-07-direct",
+          "pair": "changing_percentage_base-07",
+          "family": "changing_percentage_base",
+          "variant": "direct",
+          "budget": 4096,
+          "expected": "-2797/100",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 124.59112833299878
+        }
+      },
+      {
+        "id": "changing_percentage_base-07-reworded",
+        "original": {
+          "id": "changing_percentage_base-07-reworded",
+          "pair": "changing_percentage_base-07",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-2797/100",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 77.84396195899899
+        },
+        "clarified": {
+          "id": "changing_percentage_base-07-reworded",
+          "pair": "changing_percentage_base-07",
+          "family": "changing_percentage_base",
+          "variant": "reworded",
+          "budget": 4096,
+          "expected": "-2797/100",
+          "parsed": "",
+          "complete": false,
+          "correct": false,
+          "formatted_answer_matches": false,
+          "reason": "incomplete",
+          "tokens": 4096,
+          "seconds": 124.8602197500004
+        }
+      }
+    ],
+    "limitation": "Selected after viewing original failures; added wording and example confound a unit-only causal interpretation."
+  }
+}

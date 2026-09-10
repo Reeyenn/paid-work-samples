@@ -1,0 +1,18 @@
+[transformers] You are using a model of type `spark2_5` to instantiate a model of type ``. This may be expected if you are loading a checkpoint that shares a subset of the architecture (e.g., loading a `sam2_video` checkpoint into `Sam2Model`), but is otherwise not supported and can yield errors. Please verify that the checkpoint is compatible with the model you are instantiating.
+1/16 changing_percentage_base-00-direct tokens=4096 finish=length seconds=88.4
+2/16 changing_percentage_base-00-reworded tokens=4096 finish=length seconds=89.6
+3/16 changing_percentage_base-01-direct tokens=2688 finish=stop seconds=58.3
+4/16 changing_percentage_base-01-reworded tokens=4096 finish=length seconds=87.3
+5/16 changing_percentage_base-02-direct tokens=2013 finish=stop seconds=44.0
+6/16 changing_percentage_base-02-reworded tokens=4096 finish=length seconds=92.5
+7/16 changing_percentage_base-03-direct tokens=4096 finish=length seconds=105.7
+8/16 changing_percentage_base-03-reworded tokens=3550 finish=stop seconds=94.2
+9/16 changing_percentage_base-04-direct tokens=4096 finish=length seconds=113.9
+10/16 changing_percentage_base-04-reworded tokens=4096 finish=length seconds=118.5
+11/16 changing_percentage_base-05-direct tokens=4096 finish=length seconds=121.6
+12/16 changing_percentage_base-05-reworded tokens=4096 finish=length seconds=124.2
+13/16 changing_percentage_base-06-direct tokens=4096 finish=length seconds=124.6
+14/16 changing_percentage_base-06-reworded tokens=4096 finish=length seconds=124.1
+15/16 changing_percentage_base-07-direct tokens=4096 finish=length seconds=124.6
+16/16 changing_percentage_base-07-reworded tokens=4096 finish=length seconds=124.9
+COMPLETE

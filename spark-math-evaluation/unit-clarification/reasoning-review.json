@@ -1,0 +1,38 @@
+{
+  "reviewer": "OpenAI AI assistant; no independent human review",
+  "reviews": [
+    {
+      "id": "changing_percentage_base-00-direct",
+      "label": "incomplete_unit_deliberation",
+      "evidence": "Repeatedly derives -206/5 then asks if the coefficient or fraction is required",
+      "assessment": "Correct result repeatedly established; explicit clarification does not prevent repeated unit/format deliberation and token-cap failure."
+    },
+    {
+      "id": "changing_percentage_base-00-reworded",
+      "label": "incomplete_unit_confusion",
+      "evidence": "States percentage value must be between0 and100, then debates whether0.2 equals20%",
+      "assessment": "Correct -206/5 early, followed by incorrect general range claims and prolonged unit confusion despite explicit clarification; token cap."
+    },
+    {
+      "id": "changing_percentage_base-01-direct",
+      "label": "correct_completed",
+      "assessment": "Correct coefficient 124/25 after extended repeated unit deliberation and a self-corrected 10496/10000 decimal doubt."
+    },
+    {
+      "id": "changing_percentage_base-01-reworded",
+      "label": "incomplete_unit_deliberation",
+      "assessment": "Correct coefficient 124/25 repeatedly established; continued unit/format deliberation consumes the token cap."
+    },
+    {
+      "id": "changing_percentage_base-02-direct",
+      "label": "format_and_unit_failure",
+      "assessment": "Final ANSER: -13/80 both misspells the required label and reports proportional change despite explicit coefficient instruction; correct coefficient is -65/4. Scorer categorizes format first."
+    },
+    {
+      "id": "changing_percentage_base-03-reworded",
+      "label": "correct_completed",
+      "assessment": "Correct coefficient 122/25 with prolonged repeated unit and final-format deliberation."
+    }
+  ],
+  "coverage": "Six selected follow-up outputs reviewed in full: first four plus remaining two completed responses. Remaining ten capped outputs are scored but not reviewed in this file."
+}

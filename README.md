@@ -22,3 +22,9 @@ The WordPress sample is GPL-2.0-or-later as marked in its plugin header. The PHP
 ## React dashboard sample
 
 [Workroom](frontend-workqueue/README.md): a fictional React/TypeScript queue with status filtering, detail sheets, themes, and reusable components. Build and type checks pass; browser interaction testing has not been performed.
+
+## Technical writing and evaluation
+
+[The timeout that should not trigger a retry](timeout-retry-article/README.md): a runnable PHP failure case and technical article.
+
+[Spark exact-math diagnostic](spark-math-evaluation/README.md): 64 primary generations and 16 exploratory follow-ups, raw outputs, strict scoring, disclosed dataset limitations, and reasoning review. Contest eligibility is unconfirmed.

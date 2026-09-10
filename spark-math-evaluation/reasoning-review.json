@@ -1,0 +1,393 @@
+{
+  "reviewer": "OpenAI coding assistant; no independent human review",
+  "reviews": [
+    {
+      "id": "equal_distance_speed-00-direct",
+      "label": "correct_answer_with_self_corrected_trace_error",
+      "evidence": "98/511 = (2*7)/(7*73) = 2/73?",
+      "assessment": "This cancellation is wrong; 98/511 = 14/73. The same paragraph immediately questions and corrects it. Final 2520/73 is correct. Do not describe this as an uncorrected final reasoning error."
+    },
+    {
+      "id": "equal_distance_speed-00-reworded",
+      "label": "correct_math_format_failure",
+      "evidence": "ANSER: 2520/73",
+      "assessment": "Distance/time derivation and exact fraction are correct. Final label misspells ANSWER, failing the prespecified strict format. This is not a mathematical error."
+    },
+    {
+      "id": "equal_distance_speed-01-direct",
+      "label": "truncated_with_disputed_cancellation_error",
+      "evidence": "Numerator now 3 * 11 * 59. So fraction = (3 * 11 * 59) / (4 * 23)",
+      "assessment": "Cancellation removes a numerator factor 2 without reducing the denominator. The trace later derives the correct 1947/46 by gcd and notices the discrepancy, but continues debating until the output is truncated. No completed answer."
+    },
+    {
+      "id": "equal_distance_speed-01-reworded",
+      "label": "correct_final_derivation_with_trace_approximation_error",
+      "evidence": "213/59 \u2248 3.60339",
+      "assessment": "The approximate value should be about 3.61016949, so the numerical cross-check is wrong. The exact derivation and final 1947/46 are correct; the final explanation uses the correct exact expressions."
+    },
+    {
+      "id": "equal_distance_speed-02-direct",
+      "label": "correct_derivation",
+      "evidence": "5/3 + 19/17 = 142/51; 190/(142/51) = 4845/71",
+      "assessment": "Distance/time derivation, factor cancellation and final fraction are correct. No mathematical error identified in the full output."
+    },
+    {
+      "id": "equal_distance_speed-02-reworded",
+      "label": "correct_answer_with_self_corrected_trace_error",
+      "evidence": "95*85 = 7975? ... 7600 + 475 = 8075",
+      "assessment": "The trace briefly proposes an incorrect multiplication and immediately corrects it. Subsequent exact derivation and final 4845/71 are correct."
+    },
+    {
+      "id": "equal_distance_speed-03-direct",
+      "label": "correct_derivation",
+      "evidence": "37/7 + 37/12 = 703/84; 148/(703/84)=336/19",
+      "assessment": "Exact calculation and final answer are correct. No mathematical error identified in the full output."
+    },
+    {
+      "id": "equal_distance_speed-03-reworded",
+      "label": "truncated_after_arithmetic_error_and_repetition",
+      "evidence": "703*17 = 12051, remainder 381",
+      "assessment": "703*17 is 11951, leaving remainder 481 in 12432/703. This incorrect multiplication produces a false discrepancy with the already correct 336/19 and lengthy repeated decimal checking. Output stops at the token limit during another attempt to simplify."
+    },
+    {
+      "id": "equal_distance_speed-04-direct",
+      "label": "correct_exact_derivation",
+      "evidence": "2 * 1044 / 65 = 2088/65",
+      "assessment": "Total distance/time and cancellation are correct. No mathematical error found in the full output."
+    },
+    {
+      "id": "equal_distance_speed-04-reworded",
+      "label": "correct_answer_with_self_corrected_trace_error",
+      "evidence": "1044 = 36*29 = 2^2 * 3^2 * 13?",
+      "assessment": "The proposed factor 13 is wrong and immediately corrected to 29. Final derivation and answer are correct."
+    },
+    {
+      "id": "equal_distance_speed-05-direct",
+      "label": "correct_answer_with_minor_trace_arithmetic_error",
+      "evidence": "total 245.755",
+      "assessment": "The approximate check sums 227.288 + 18.46715 incorrectly (245.75515). The exact derivation and final 2511/29 remain correct. The visible final contains only the answer, with reasoning retained in the trace."
+    },
+    {
+      "id": "equal_distance_speed-05-reworded",
+      "label": "correct_answer_with_self_corrected_trace_error",
+      "evidence": "(31 * 81) / (29 * 2?) Wait",
+      "assessment": "Temporarily suggests an extra factor 2 in the denominator, immediately corrects it. Final exact derivation and 2511/29 are correct."
+    },
+    {
+      "id": "equal_distance_speed-06-direct",
+      "label": "truncated_after_correct_derivation",
+      "evidence": "So fraction = 3792/103.",
+      "assessment": "Correct total-time derivation and reduction are repeated at length until the 4096-token cap. No complete final answer section. Minor wording says total distance = 220 km (out and back) = 440 km, but all computations correctly use 440."
+    },
+    {
+      "id": "equal_distance_speed-06-reworded",
+      "label": "correct_exact_derivation",
+      "evidence": "2 * 1896 / 103 = 3792 / 103",
+      "assessment": "Total distance/time and reduction are correct. Prime-check trace is unnecessarily long, but no mathematical error found."
+    },
+    {
+      "id": "equal_distance_speed-07-direct",
+      "label": "correct_answer_with_self_corrected_trace_error",
+      "evidence": "(d1*v1 + d2*v2) / (d1/v1 + d2/v2)",
+      "assessment": "Briefly proposes an incorrect numerator, then immediately replaces it with d1+d2. Final derivation and 225/4 are correct."
+    },
+    {
+      "id": "equal_distance_speed-07-reworded",
+      "label": "correct_exact_derivation",
+      "evidence": "358/1432 = 1/4",
+      "assessment": "Correct distance/time and reduction. Extended prime checking goes beyond what is needed but calculations checked are valid."
+    },
+    {
+      "id": "changing_percentage_base-00-direct",
+      "label": "truncated_with_unit_confusion_and_fraction_errors",
+      "evidence": "412/100 simplifies to 103/250",
+      "assessment": "Initial -41.2% is correct. Later confuses the percentage coefficient with fractional change, makes invalid fraction equalities, and repeats until capped. Dataset asks for a percentage but final fraction format omits a percent sign; acknowledge this unit ambiguity as a task-design limitation."
+    },
+    {
+      "id": "changing_percentage_base-00-reworded",
+      "label": "truncated_after_unit_confusion_and_repetition",
+      "evidence": "(-206/5) * (1/100) * (100/100)",
+      "assessment": "Correct final price 294/5 and change -206/5, then confuses percentage notation and repeats an equality until capped. Same unit ambiguity in output format applies."
+    },
+    {
+      "id": "changing_percentage_base-01-direct",
+      "label": "truncated_with_unit_confusion_and_fraction_errors",
+      "evidence": "4.96/100 = 496/1000 = 62/125",
+      "assessment": "Correctly derives 1.0496P and 4.96%, then alternates between the coefficient and fractional-change conventions, including a denominator error: 4.96/100 is 496/10000. No final answer before token cap. Unit ambiguity in the prompt is a limitation."
+    },
+    {
+      "id": "changing_percentage_base-01-reworded",
+      "label": "truncated_with_unit_confusion_and_fraction_errors",
+      "evidence": "496/1000",
+      "assessment": "Correct change 4.96, then mixes coefficient and fraction conventions, repeatedly proposes wrong denominator 1000, eventually corrects to 10000, but never finishes. Prompt unit ambiguity applies. Also incorrectly generalizes percentage change to between -100 and 100."
+    },
+    {
+      "id": "changing_percentage_base-02-direct",
+      "label": "truncated_with_unit_confusion",
+      "evidence": "-16.25% = -13/80",
+      "assessment": "Correct final ratio 67/80, fractional change -13/80, and percentage coefficient -65/4. Repeatedly debates which output convention is required and reaches token cap. No separate arithmetic error found; primarily task-unit ambiguity and failure to finish."
+    },
+    {
+      "id": "changing_percentage_base-02-reworded",
+      "label": "truncated_with_unit_ambiguity",
+      "evidence": "the percentage is -16.25% ... p/q = -13/80",
+      "assessment": "Computes the correct final price 83.75 and percentage coefficient -65/4, then repeatedly debates coefficient versus proportion. No final answer before cap. Original prompt is ambiguous about the requested unit; one early conversion -1625/1000 is also incorrect."
+    },
+    {
+      "id": "changing_percentage_base-03-direct",
+      "label": "truncated_with_unit_confusion",
+      "evidence": "if x = 122/25 %, then x = (122/25) * 100%?",
+      "assessment": "Correctly computes 1.0488 multiplier, 4.88 percent and fractions 122/25 and 61/1250. Then mixes percent notation with an extra factor 100 and repeats until cap. Prompt unit ambiguity contributes; this is not evidence of inability to derive the underlying change."
+    },
+    {
+      "id": "changing_percentage_base-03-reworded",
+      "label": "truncated_with_unit_ambiguity",
+      "evidence": "4.88 = 488/100 = 122/25",
+      "assessment": "Derives correct multiplier, final price and percentage coefficient, then repeatedly debates coefficient versus proportion until cap. Also makes an unjustified general claim that percentage changes lie between -100 and 100."
+    },
+    {
+      "id": "changing_percentage_base-04-direct",
+      "label": "truncated_with_self_corrected_arithmetic_and_unit_confusion",
+      "evidence": "1.42 * 0.54 = 0.7688 ... earlier 0.7688 was a mistake",
+      "assessment": "Correct result -34.68 percent appears early. Incorrect cross-check multiplication is corrected to 0.7668. It repeatedly mixes percentage coefficient -867/25 with relative proportion -867/2500 and exhausts the cap."
+    },
+    {
+      "id": "changing_percentage_base-04-reworded",
+      "label": "truncated_with_unit_ambiguity",
+      "evidence": "the signed percentage is -867/25 %?",
+      "assessment": "Derives the correct final price 65.32 and coefficient -867/25, then repeats coefficient/proportion debate to the cap. One passage accidentally says final price is 100; the surrounding derivation continues using 65.32."
+    },
+    {
+      "id": "changing_percentage_base-05-direct",
+      "label": "truncated_with_self_corrected_errors_and_unit_confusion",
+      "evidence": "0.41 * 1.46 = 0.6026? ... 0.5986",
+      "assessment": "Correct multiplier 0.8614 and -13.86 percent are derived. Wrong intermediate 0.6026 is corrected. It proposes an invalid simplification -3465/2500 before later obtaining the correct proportion -693/5000 and coefficient -693/50. Repeated unit confusion exhausts cap."
+    },
+    {
+      "id": "changing_percentage_base-05-reworded",
+      "label": "truncated_with_decimal_conversion_error_and_unit_confusion",
+      "evidence": "13.86 = 1386/1000 ... -693/500",
+      "assessment": "Correct multiplier and -13.86 percent are derived, but a decimal conversion loses a factor of ten. An exact rederivation obtains -693/50 before the output returns to wrong conversion and repeated unit discussion until cap."
+    },
+    {
+      "id": "changing_percentage_base-06-direct",
+      "label": "finished_with_alternative_unit_correct_math",
+      "evidence": "ANSWER: -29/200",
+      "assessment": "Correctly derives -14.5 percent and outputs its relative proportion -29/200, rather than the prespecified percentage coefficient -29/2. This fails the primary exact scorer but is mathematically defensible given the prompt unit ambiguity. One intermediate sentence incorrectly equates -14.5 with -29/200 without a percent sign; final prose includes the percent sign correctly."
+    },
+    {
+      "id": "changing_percentage_base-06-reworded",
+      "label": "truncated_with_unit_ambiguity",
+      "evidence": "So which one is correct? ... -29/200? Or -29/2?",
+      "assessment": "Correct final price 85.5 and -14.5 percent; repeated coefficient/proportion uncertainty exhausts cap. No independent numerical calculation failure was identified. Also repeats the unjustified -100 to 100 general bound."
+    },
+    {
+      "id": "changing_percentage_base-07-direct",
+      "label": "truncated_after_correct_derivation",
+      "evidence": "(-2797/10000) * 100 = -2797/100",
+      "assessment": "Derives the expected percentage coefficient correctly several times but continues repeated verification and unnecessary primality checks until truncated; original prompt unit ambiguity is discussed. No final answer emitted."
+    },
+    {
+      "id": "changing_percentage_base-07-reworded",
+      "label": "truncated_with_unit_ambiguity",
+      "evidence": "-27.97% = -2797/10000 ... discrepancy",
+      "assessment": "Correctly computes final 72.03 and both representations of the signed change. It debates the unit and repeats until cap, with an unnecessary primality check."
+    },
+    {
+      "id": "conditional_without_replacement-00-direct",
+      "label": "correct_derivation_and_answer",
+      "evidence": "(2/21) / (4/7) = 1/6",
+      "assessment": "Correct conditioning on at least one red, exact arithmetic, and final answer. Reasoning repeats before finishing."
+    },
+    {
+      "id": "conditional_without_replacement-00-reworded",
+      "label": "correct_answer_with_reasoning_only_in_trace",
+      "evidence": "remaining pairs = 105 - 45 = 60 ... 10 / 60 = 1/6",
+      "assessment": "Correct combinatorial derivation in trace; final response contains only ANSWER: 1/6 despite requested reasoning. Primary answer criterion passes."
+    },
+    {
+      "id": "conditional_without_replacement-01-direct",
+      "label": "incorrect_without_replacement_denominator",
+      "evidence": "P(no red) = (15/28)*(15/27)",
+      "assessment": "The second blue count should be 14, not 15. This makes the conditioning denominator 531/756 instead of 546/756 and produces incorrect 52/177 instead of 2/7. The error persists through repeated checks; final response has only the wrong answer."
+    },
+    {
+      "id": "conditional_without_replacement-01-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Counts red-red pairs and excludes blue-blue pairs before dividing.",
+      "assessment": "Exact combination counts, conditioning denominator, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-02-direct",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Counts red-red pairs and excludes blue-blue pairs before dividing.",
+      "assessment": "Exact combination counts, conditioning denominator, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-02-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Counts red-red pairs and excludes blue-blue pairs before dividing.",
+      "assessment": "Exact combination counts, conditioning denominator, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-03-direct",
+      "label": "correct_answer_with_reasoning_only_in_trace",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red count by remaining count.",
+      "assessment": "Exact conditioning and simplification are correct. Final response contains only the answer despite the reasoning request."
+    },
+    {
+      "id": "conditional_without_replacement-03-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red count by remaining count.",
+      "assessment": "Exact conditioning and simplification are correct. Final response includes correct reasoning."
+    },
+    {
+      "id": "conditional_without_replacement-04-direct",
+      "label": "correct_answer_with_reasoning_only_in_trace",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red count by remaining count.",
+      "assessment": "Exact conditioning and simplification are correct. Final response contains only the answer despite the reasoning request."
+    },
+    {
+      "id": "conditional_without_replacement-04-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red count by remaining count.",
+      "assessment": "Exact conditioning and simplification are correct. Final response includes correct reasoning."
+    },
+    {
+      "id": "conditional_without_replacement-05-direct",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red probability/count by the remaining probability/count.",
+      "assessment": "Exact conditioning, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-05-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red probability/count by the remaining probability/count.",
+      "assessment": "Exact conditioning, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-06-direct",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red probability/count by the remaining probability/count.",
+      "assessment": "Exact conditioning, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-06-reworded",
+      "label": "correct_derivation_and_answer",
+      "evidence": "Correctly excludes two-blue outcomes and divides red-red probability/count by the remaining probability/count.",
+      "assessment": "Exact conditioning, simplification and final answer are correct."
+    },
+    {
+      "id": "conditional_without_replacement-07-direct",
+      "label": "correct_duplicate_prompt",
+      "evidence": "5 red and 10 blue balls; same prompt as pair 00",
+      "assessment": "Correct answer and derivation; this generated pair duplicates pair 00 exactly. Preserve prespecified totals but report uniqueness and provide a deduplicated sensitivity summary. Final reasoning is correct."
+    },
+    {
+      "id": "conditional_without_replacement-07-reworded",
+      "label": "correct_duplicate_prompt",
+      "evidence": "5 red and 10 blue balls; same prompt as pair 00",
+      "assessment": "Correct answer and derivation; this generated pair duplicates pair 00 exactly. Preserve prespecified totals but report uniqueness and provide a deduplicated sensitivity summary. Final response contains only the answer."
+    },
+    {
+      "id": "noncoprime_congruences-00-direct",
+      "label": "correct_overlong",
+      "evidence": "gcd(6,10)=2 does not divide 5-4=1",
+      "assessment": "Correct inconsistency argument and final 0/1. Repeats the established parity argument and answer-format deliberation extensively."
+    },
+    {
+      "id": "noncoprime_congruences-00-reworded",
+      "label": "correct_overlong",
+      "evidence": "gcd(6,10)=2 does not divide 5-4=1",
+      "assessment": "Correct inconsistency argument and final 0/1. Repeats the established parity argument and answer-format deliberation extensively."
+    },
+    {
+      "id": "noncoprime_congruences-01-direct",
+      "label": "correct_overlong",
+      "evidence": "n=38+70k, 2<=k<=8",
+      "assessment": "Correct CRT reduction, bounds and final 7/1; extensive repetition."
+    },
+    {
+      "id": "noncoprime_congruences-01-reworded",
+      "label": "incomplete_self_corrected_arithmetic",
+      "evidence": "n=38+70k, 2<=k<=8",
+      "assessment": "Correct CRT and count seven, but initially lists steps of 30 instead of 70 before correcting. Repeated answer-format deliberation including ANSER typo. Token cap occurs before final response."
+    },
+    {
+      "id": "noncoprime_congruences-02-direct",
+      "label": "correct_overlong",
+      "evidence": "x=8+36k, k=1,...,18",
+      "assessment": "Correct lcm reduction, inclusive bounds and final 18/1; extensive repeated answer-format deliberation."
+    },
+    {
+      "id": "noncoprime_congruences-02-reworded",
+      "label": "correct_overlong",
+      "evidence": "x=8+36k, k=1,...,18",
+      "assessment": "Correct lcm reduction, inclusive bounds and final 18/1; extensive repeated answer-format deliberation."
+    },
+    {
+      "id": "noncoprime_congruences-03-direct",
+      "label": "correct_with_trace_errors",
+      "evidence": "gcd(10,14)=2 does not divide 13",
+      "assessment": "Correct parity contradiction and final zero. Unnecessary enumeration contains wrong progression entries (386 then 390 instead of 400)."
+    },
+    {
+      "id": "noncoprime_congruences-03-reworded",
+      "label": "incomplete_with_trace_errors",
+      "evidence": "gcd(10,14)=2 does not divide 13",
+      "assessment": "Correct gcd contradiction early. Unnecessary enumeration continues beyond upper bound and hits token cap; several initial remainder calculations are wrong (59 mod14=3, not13)."
+    },
+    {
+      "id": "noncoprime_congruences-04-direct",
+      "label": "incomplete_format_deliberation",
+      "evidence": "gcd(8,12)=4 does not divide 2",
+      "assessment": "Most opening text debates integer-as-fraction format. Eventually correct gcd contradiction, followed by unnecessary enumeration until token cap."
+    },
+    {
+      "id": "noncoprime_congruences-04-reworded",
+      "label": "correct_with_trace_error",
+      "evidence": "gcd(8,12)=4 does not divide 2",
+      "assessment": "Correct gcd contradiction and final zero. Trace incorrectly says residues alternate between 3 and 11 after actually listing 3,11,7."
+    },
+    {
+      "id": "noncoprime_congruences-05-direct",
+      "label": "incomplete_with_trace_errors",
+      "evidence": "92 mod18=14",
+      "assessment": "Correct parity contradiction, but unnecessary enumeration includes wrong remainders (92 mod18=2, 308 mod18=2). Correct conclusion is known but token cap prevents delivered answer."
+    },
+    {
+      "id": "noncoprime_congruences-05-reworded",
+      "label": "incomplete_with_trace_errors",
+      "evidence": "80 mod18=4; 92 mod18=10",
+      "assessment": "Correct gcd contradiction. Enumeration includes wrong remainders (80 mod18=8, 92 mod18=2). Repetition consumes budget; final explanatory response begins but is cut off before answer."
+    },
+    {
+      "id": "noncoprime_congruences-06-direct",
+      "label": "incomplete_with_trace_errors",
+      "evidence": "n=24k+2, k=2,...,24",
+      "assessment": "Correct congruence and index bounds/count, but most enumerated values omit +2 (48 instead of50). Only some entries corrected. Repetition reaches token cap without final answer."
+    },
+    {
+      "id": "noncoprime_congruences-06-reworded",
+      "label": "correct_overlong",
+      "evidence": "n=24k+2, k=2,...,24",
+      "assessment": "Correct bounds, enumeration endpoints and final23/1; extensive repeated answer-format deliberation."
+    },
+    {
+      "id": "noncoprime_congruences-07-direct",
+      "label": "correct_with_trace_errors",
+      "evidence": "81 mod15=3",
+      "assessment": "Correct gcd contradiction and final zero, but unnecessary enumeration has wrong remainders (81 mod15=6,82 mod15=7)."
+    },
+    {
+      "id": "noncoprime_congruences-07-reworded",
+      "label": "correct_with_trace_errors",
+      "evidence": "multiples of 15 mod9 are either0 or6",
+      "assessment": "Correct contradiction and final zero. Trace omits residue3 from its summary immediately after listing it. Final response contains only answer."
+    }
+  ],
+  "limitations": [
+    "Percentage prompts do not explicitly say whether the final p/q is a percentage coefficient or a fractional change. Preserve the prespecified scoring, but report this unit ambiguity and do not attribute all errors solely to model mathematics.",
+    "Probability pair07 exactly duplicates pair00:62 unique prompts and31 unique mathematical pairs, not64 independent cases. Deduplicated sensitivity retains first occurrence."
+  ]
+}
