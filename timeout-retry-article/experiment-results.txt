@@ -1,0 +1,4 @@
+Naive retry: 2 fake fulfillments
+Ledger flow: 1 fake fulfillment
+States: uncertain -> uncertain -> succeeded
+No network requests or real transactions.
